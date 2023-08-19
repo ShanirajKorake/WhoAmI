@@ -1,0 +1,673 @@
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #404040;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+}
+
+#header{
+   width: 100%;
+   background:#181818a4;
+   display: flex;
+   margin: auto;
+}
+
+#logo{
+    margin-right: 2rem;
+    font-family: 'Rock Salt', cursive;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa;    
+      /* 0 0 102px #0fa;; */
+      /* 0 0 151px #0fa,
+      0 0 157px rgb(2, 2, 2); */
+      animation: flicker 1.5s infinite alternate; 
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 19px #fff,
+        0 0 80px #0fa;
+        /* 0 0 100px #0fa; */
+        /* 0 0 150px #0fa; */
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+#forborder{
+    width: 0;
+    margin-top:auto;
+    margin-bottom:auto;
+    border-color: #404040;
+    height: 3rem;
+    border-style: solid;
+    border-left: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+#title{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1rem;
+    
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Barriecito', cursive;
+}
+#content{
+    margin: auto;
+    display: flex;
+}
+.blokcs{
+    background-color: #121212;
+    display: flex; /* Display children side by side */
+    align-items: center; /* Center items vertically */
+    }
+
+#block1{
+    background-color: #121212;
+    display: flex;
+    width: auto;
+    height: 30rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    margin: 1rem ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#name{
+    padding-right:2rem;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    flex: 1;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    position:absolute;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.info {
+    text-align: center;
+    display: flex;
+    /* flex: 1;  */
+    width: 30%;
+    padding: 2rem;
+    color: white;
+   position: relative;
+}
+
+.bgimg {
+    flex: 1;
+    border-radius: 1rem;
+    height: auto; /* Set an appropriate height for the image */
+    background-image: url('pic1.jpg');
+    background-size: cover; /* Scale image to cover the div */
+    background-position: center; /* Center the image */
+}
+
+
+.bgimg:before {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#121212, rgba(0, 0, 0, 0));
+}
+#block2{
+    /* background-color: #121212; */
+    width:auto;
+    border-radius: 1rem;
+    /* margin:1rem; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.555); */
+
+}
+#block2Title{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0;
+    padding: 2rem;
+    padding-bottom: 0;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+#subblock1{
+    display: flex;
+    width: auto;
+    margin:1rem;
+    /* border-style: solid; */
+}
+
+#nonblankb1s1{
+    flex: 7     ;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    background-color: #22303c;
+    height: 10rem;
+}
+
+#txt1{
+    height: auto;
+    flex:1;
+    /* writing-mode: vertical-rl;
+    rotate: 180deg; */
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin: auto;
+    /* padding-right: 2rem; */
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+#bgimgb1s1{
+    flex: 2;
+    background-image: url('coding1.jpg');
+    height: auto;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+#bgimgb1s1:before {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#22303c, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+#blankb1s1{
+    flex:1;
+}
+
+
+
+
+
+#subblock2{
+    display: flex;
+    width: auto;
+    margin:1rem;
+    /* border-style: solid; */
+}
+
+#nonblankb1s2{
+    flex: 7;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    background-color: #22303c;
+    height: 10rem;
+}
+
+#txt2{
+    height: auto;
+    flex:1;
+    /* writing-mode: vertical-rl;
+    rotate: 180deg; */
+    text-align: center;
+    margin: auto;
+    /* padding-right: 2rem; */
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+#bgimgb1s2{
+    flex: 2;
+    background-image: url('minecraft.jpeg');
+    height: auto;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+#bgimgb1s2:before {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,#22303c, rgba(0, 0, 0, 0));
+}
+#blankb1s2{
+    flex:1;
+}
+
+
+
+#subblock3{
+    display: flex;
+    width: auto;
+    margin:1rem;
+    /* border-style: solid; */
+}
+
+#nonblankb1s3{
+    flex: 7;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    background-color: #22303c;
+    height: 10rem;
+}
+
+#txt3{
+    height: auto;
+    flex:1;
+    /* writing-mode: vertical-rl;
+    rotate: 180deg; */
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin: auto;
+    /* padding-right: 2rem; */
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+#bgimgb1s3{
+    flex: 2;
+    background-image: url('photoshop.jpg');
+    height: auto;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+#bgimgb1s3:before {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#22303c, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+#blankb1s3{
+    flex:1;
+}
+
+
+
+
+#subblock4{
+    display: flex;
+    width: auto;
+    margin:1rem;
+    /* border-style: solid; */
+}
+
+#nonblankb1s4{
+    flex: 7;
+    display: flex;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    background-color: #22303c;
+    height: 10rem;
+}
+
+#txt4{
+    height: auto;
+    flex:1;
+    /* writing-mode: vertical-rl;
+    rotate: 180deg; */
+    text-align: center;
+    margin: auto;
+    /* padding-right: 2rem; */
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+#bgimgb1s4{
+    flex: 2;
+    background-image: url('youtube.jpeg');
+    height: auto;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+#bgimgb1s4:before {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,#22303c, rgba(0, 0, 0, 0));
+}
+#blankb1s4{
+    flex:1;
+}
+
+#partition1{
+    display: flex;
+    width: auto;
+    margin: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+#line1 {
+flex:1;
+margin: auto;
+}
+#partition1txt{
+    flex:1;
+}
+#line2{
+    margin: auto;
+    flex:1;
+}
+#block3{
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    margin:5rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    background-color: #15202b;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#block3subtext1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#block3maintext{
+    font-size: 3rem;
+    text-align: center;
+}
+#block3subtext2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+#block4{
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    margin:5rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    background-color: #15202b;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+#block4subtext1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#block4maintext{
+    font-size: 3rem;
+    text-align: center;
+}
+#block4subtext2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#block5{
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    margin:5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #15202b;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+#block5maintext{
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+#partition2{
+    display: flex;
+    width: auto;
+    margin: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    font-family: 'Acme', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+#line3 {
+    flex:1;
+    height: auto;
+    margin: auto;
+}
+#partition2txt{
+    flex:1;
+}
+#line4{
+    flex:1;
+    height: auto;
+    margin: auto;
+}
+
+.langimg img{
+    height: 10rem;
+    width: 10rem;
+}
+.langimg{
+    width: fit-content  ;
+    margin: auto;
+}
+#block6{
+    width: auto;
+    margin:2rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.langtxt{
+    text-align: center;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+.langs{
+    background-color: #15202b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+#lasttitle{
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin:auto;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+}
+
+.insta{
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top:0.5rem ;
+    display: flex;
+    grid-template-columns: repeat(2,5fr)  ;
+    
+}
+.insta1{
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top:0.5rem ;
+    display: flex;
+    grid-template-columns: repeat(2,5fr)  ;
+    
+}
+.insta2{
+    width: 50%;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top:0.5rem ;
+    display: flex;
+    grid-template-columns: repeat(2,5fr)  ;
+    
+}
+.mail{
+    height: 2rem;
+    width:2rem ;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    
+
+}
+
+.mailtxt{
+    text-align: start;
+    flex: 2;
+    width: auto;
+    height: auto;
+    color: white;
+    font-size: 1.5rem     ;
+
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+#block7{
+    width: 50%;
+
+    margin: auto    ;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #15202b;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+
+
+
+}
+#credits{
+    width: 50%;
+    margin: 10rem auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+}
+#god{margin-left: 5px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 30px;
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+      animation: flicker 1.5s infinite alternate; 
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      text-shadow:
+        0 0 4px #fff,
+        0 0 19px #fff,
+        0 0 80px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+    20%, 24%, 55% {       
+      text-shadow: none;
+    }
+  }
+
+
+
+
+@media(max-width:998px) {
+    html{
+        font-size: 75%;
+    }
+    #block6{
+        width: auto;
+        margin:2rem;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 1rem;
+    }
+}
+@media(max-width:768px) {
+    html{
+        font-size: 60%;
+    }
+    #block6{
+        width: auto;
+        margin:2rem;
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .insta1{
+        margin: 0;
+    
+    }
+    .insta2{
+        margin: 0;
+
+    }
+    .insta{
+        
+        margin: 0;
+        margin-right: 1rem;
+    }
+    #block7{
+        width: 70%;
+    }
+    
+}
